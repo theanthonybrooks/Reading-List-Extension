@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  width: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+  min-width: 400px;
+  max-width: 600px;
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  padding-top: 1em;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #bcbcbc;
+  background-color: #eaeaea;
+  color: #333;
+
+  box-shadow: 4px 4px 0px #8c8c8c,
+    -4px -4px 0px #fff,
+    inset -3px -3px 0px #d1d1d1,
+    inset 3px 3px 0px #f9f9f9;
+  /* Outer dark shadow - on the bottom-right */
+  /* Outer light shadow - on the top-left */
+  /* Inner dark shadow - on the bottom-right */
+
+  border-radius: 3px;
+
+  &:hover {
+    transform: translate(0.25px, 0.25px);
+    background-color: #d6d6d6;
+    box-shadow: 3px 3px 0px #8c8c8c,
+      -3px -3px 0px #fff,
+      inset -3px -3px 0px #d1d1d1,
+      inset 3px 3px 0px hsl(0, 5%, 89%),
+      inset 50% -3px 10px #eaeaea;
+    /* Outer dark shadow - on the bottom-right */
+    /* Outer light shadow - on the top-left */
+    /* Inner dark shadow - on the bottom-right */
+    /* Inner light shadow - on the top-left */
+  }
+
+  &:active {
+    background-color: #d6d6d6;
+    box-shadow: inset 4px 3px 2px #8c8c8c,
+      inset 2px 2px 0px #fff;
+
+    & > i {
+      transform: translate(2px, 2px);
+    }
+  }
+}
+
+.success {
+  color: #4caf50;
+}
+.error {
+  color: black;
+}
+
+#buttons {
+  display: flex;
+}
+
+#statusList {
+  transition: opacity 0.3s ease,
+    visibility 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+  max-width: 350px;
+}
+
+#statusList.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

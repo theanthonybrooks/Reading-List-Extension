@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Add to Reading List with Notifications",
+  "version": "1.3",
+  "description": "Adds the current tab to Chrome's Reading List and provides dynamic notifications and feedback.",
+  "permissions": [
+    "tabs",
+    "commands",
+    "notifications",
+    "activeTab",
+    "readingList",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "success.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "commands": {
+    "add_to_reading_list": {
+      "suggested_key": {
+        "default": "Ctrl+D",
+        "mac": "Command+D"
+      },
+      "description": "Add the current tab to the Reading List"
+    },
+    "mark_as_read": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+D",
+        "mac": "Command+Shift+D"
+      },
+      "description": "Mark the current tab as read"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "host_permissions": ["<all_urls>"]
+}

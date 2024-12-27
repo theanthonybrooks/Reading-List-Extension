@@ -1,0 +1,30 @@
+--Chrome Reading List Extension v1.3--
+
+Fairly basic chrome extension that adds the
+current tab to the reading list and provides a
+notification when it's added/removed or marked as
+read/unread.
+
+To install, go to chrome://extensions and click
+"Load unpacked" and select the folder where you
+downloaded this project.
+
+To use, open a new tab and press Ctrl+D or
+Command+D to add the current tab to your reading
+list. Press Ctrl+Shift+D or Command+Shift+D to
+mark the current tab as read. For those who prfer
+a visual interface, you can also click on the
+extension icon and add/remove/mark as read from
+there.
+
+The extension will show a notification when the
+current tab is added to your reading list or
+marked as read/unread.
+
+I had it using chrome's notifications in another
+version, but removed it and implemented the popup
+instead. I generally have my device in a "do not
+disturb" mode, so I didn't want to be bothered by
+notifications and didn't want to miss the
+confirmations messages to update me on reading
+list statuses.
