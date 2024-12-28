@@ -4,9 +4,7 @@
   "version": "1.3",
   "description": "Adds the current tab to Chrome's Reading List and provides dynamic notifications and feedback.",
   "permissions": [
-    "tabs",
     "commands",
-    "notifications",
     "activeTab",
     "readingList",
     "storage"
@@ -42,6 +40,5 @@
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
-  },
-  "host_permissions": ["<all_urls>"]
+  }
 }

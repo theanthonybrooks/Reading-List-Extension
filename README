@@ -34,3 +34,13 @@ list statuses.
 Link icon by Freepik from Flaticon
 https://www.flaticon.com/free-icons/open-book -
 Open book icons created by SyafriStudio
+
+--- Privacy Policy --- This extension does not
+collect any personal information. It simply takes
+the url from the current tab, passes it through
+Google/Chrome's own reading list API (to
+communicate with the actual Reading List), and
+displays the results in a popup. The popup is only
+used to display the status of the reading list and
+provide a visual interface for those who prefer
+it, and is not used for any other purpose.
